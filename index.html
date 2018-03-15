@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EDM</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- start of heading -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>Employee Data Management</h1>
+                    <p>A Comprehensive Directory of Employee Billable Hours</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of heading -->
+        <!-- start of display for employee info -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Current Employees</h3>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Emplyee Name</th>
+                                <th>Role</th>
+                                <th>Start Date</th>
+                                <th>Months Worked</th>
+                                <th>Monthly Rate ($)</th>
+                                <th>Total Billed ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- end of display for employee info -->
+        <!-- start of employee form -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Employee Name</label>
+                                <input type="name" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Role</label>
+                                <input type="role" class="form-control" id="role" placeholder="Role">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Start Date (DD/MM/YY - ex. 01/01/2018)</label>
+                                <input type="date" class="form-control" id="date" placeholder="Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="rate">Monthly Rate</label>
+                                <input type="rate" class="form-control" id="rate" placeholder="Rate">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start of employee form -->
+    </div>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

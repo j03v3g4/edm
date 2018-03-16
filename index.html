@@ -3,13 +3,13 @@
 
 <head>
     <title>EDM</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"crossorigin="anonymous">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -45,12 +45,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                                <td id="name-display"></td>
+                                <td id="role-display"></td>
+                                <td id="startDate-display"></td>
+                                <td id="monthsWorkd-display"></td>
+                                <td id="monthlyRate-display"></td>
+                                <td id="totalBilled-display"></td>
                             </tr>
                             <tr>
                         </tbody>
@@ -84,7 +84,7 @@
                                 <label for="rate">Monthly Rate</label>
                                 <input type="rate" class="form-control" id="rate" placeholder="Rate">
                             </div>
-                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-primary" id="submit" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
         </div>
         <!-- start of employee form -->
     </div>
-    <script src="assets/javascript/app.js"></script>
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
